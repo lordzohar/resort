@@ -1,0 +1,22 @@
+.map{
+	background-image: url("map.jpg");
+	height:500px; 
+	width:500px;
+	float: left;
+	margin-top: 50px;
+	position: absolute;
+}
+
+.right{
+	float: right;
+	display: inline;
+    margin-top: 50px;
+    margin-right: 200px;
+}
+
+table{
+	padding: 15px;
+	margin-right: 350px;
+}
+label {margin-right:100px;float: left;}
+input {display: inline-block;margin-right:70px; float: left;}

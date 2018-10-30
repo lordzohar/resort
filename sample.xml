@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0">
+  <Resort>
+  <rooms>
+    <one>booked</one>
+    <two>free</two>
+    <three>booked</three>
+  </rooms>
+
+  <price>
+    <one>$100</one>
+    <two>$50</two>
+    <three>$150</three>
+
+  </price>
+</Resort>
+</rss>

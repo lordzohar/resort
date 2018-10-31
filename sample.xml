@@ -7,11 +7,48 @@
     <three>booked</three>
   </rooms>
 
-  <price>
-    <one>$100</one>
-    <two>$50</two>
-    <three>$150</three>
+  <schedule>
+     <roomno>1</roomno>
+      <price>$100</price>
+      <status>Avalible</status>
 
-  </price>
+</schedule>
+<schedule>
+
+     <roomno>2</roomno>
+      <price>$50</price>
+      <status>Avalible</status>
+</schedule>
+    <schedule>
+      <roomno>3</roomno>
+      <price>$180</price>
+      <status>Avalible</status>
+
+  </schedule>
+
+  <schedule>
+      <roomno>4</roomno>
+      <price>$200</price>
+      <status>Booked</status>
+
+  </schedule>
+  <schedule>
+      <roomno>5</roomno>
+      <price>$220</price>
+      <status>Avalible</status>
+
+  </schedule>
+  <schedule>
+      <roomno>6</roomno>
+      <price>$150</price>
+      <status>Avalible</status>
+
+  </schedule>
+  <schedule>
+      <roomno>7</roomno>
+      <price>$250</price>
+      <status>Avalible</status>
+
+  </schedule>
 </Resort>
 </rss>

@@ -4,12 +4,26 @@ $(document).ready(function()
     type: "GET",
     url: "sample.xml",
     dataType: "xml",
-    success: parseXml
-  });
-});
+    success: function(xml){
+      $(xml).find('schedule').each(function(){
+      var one = $(this).find('roomno').text();
+      var two = $(this).find('price').text();
+      var three =$(this).find('status').text();
+      $("table").append("<tr><td>"+one+"<td>"+two+"<td>"+three+"</tr>");
 
-$(".one").click(function(){
+
+    });
+  },
+  error: function() {
+    alert("An error occurred while processing XML file.");
+  }
+  });
+
+
+  $(".one").click(function(){
   $('img',this).toggle();
+
+
 });
 $(".two").click(function(){
   $('img',this).toggle();
@@ -18,11 +32,51 @@ $(".three").click(function(){
   $('img',this).toggle();
 });
 
-function parseXml(xml)
-{
-  $("#main").html("<ul id='content' data-role='listview' data-inset='true'></ul>");
-  $(xml).find("item").each(function()
-  {
-    $("#content").append("<li><a href='"+$(this).find("link").text()+"'><img src='"+$(this).find("image").text()+"'/><h2>"+$(this).find("title").text()+"</h2><p>"+$(this).find("title").text()+"</p></a></li>");
-  });  
-}
+ $(".four").click(function(){
+  $('img',this).toggle();
+
+
+});
+$(".five").click(function(){
+  $('img',this).toggle();
+});
+
+$(".six").click(function(){
+  $('img',this).toggle();
+});
+
+$(".seven").click(function(){
+  $('img',this).toggle();
+});
+$(".eight").click(function(){
+  $('img',this).toggle();
+});
+
+
+
+
+
+
+});
+// $('form').on('submit', function (e) {
+
+//                 e.preventDefault();
+
+//                 $.ajax({
+//                     type: 'get',
+//                     url: 'submit.html',
+//                     data: $('form').serialize(),
+//                     success: function (response) {
+//                         //$('form')[0].reset();
+//                        // $("#feedback").text(response);
+//                         if(response=="True") {
+//                             $('form')[0].reset();
+//                             $("#feedback").text("Your information has been stored.");
+//                         }
+//                         else
+//                             $("#feedback").text(" Some Error has occured Errror !!! ID duplicate");
+//                     }
+//                 });
+
+//             });
+

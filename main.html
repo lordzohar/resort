@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<h1>Edege water Motel and Cottages</h1>
+
+<form action="submit.html" method="get">
+<label name="people">Enter number of people</label>
+
+
+<label name="number">Time to checkin</label>
+
+
+<label name="number">Time to checkout</label>
+<br>
+
+<input type="number" name="count" class="block">
+<input type="date" name="checkin" class="block">
+<input type="date" name="checkout" class="block">
+
+
+
+
+<div class="map">
+
+	<span class="one">
+	   <img                       src="num/1.png"    />
+	   <img style="display:none;" src="num/1red.png"  />
+	</span>
+
+	<span class="two">
+	   <img                       src="num/2.png"    />
+	   <img style="display:none;" src="num/2red.png"  />
+	</span>
+
+	<span class="three">
+	   <img                       src="num/3.png"    />
+	   <img style="display:none;" src="num/3red.png"  />
+	</span>
+	<span class="four">
+	   <img                       src="num/4.png"    />
+	   <img style="display:none;" src="num/4red.png"  />
+	</span>
+
+	<span class="five">
+	   <img                       src="num/5.png"    />
+	   <img style="display:none;" src="num/5red.png"  />
+	</span>
+
+	<span class="six">
+	   <img                       src="num/6.png"    />
+	   <img style="display:none;" src="num/6red.png"  />
+	</span>
+
+	<br>
+	<span class="seven">
+	   <img                       src="num/7.png"    />
+	   <img style="display:none;" src="num/7red.png"  />
+	</span>
+	<span class="eight">
+	   <img                       src="num/8.png"    />
+	   <img style="display:none;" src="num/8red.png"  />
+	</span>
+
+
+</div>
+<input type="submit" value="Book">
+
+</form>
+
+
+<div class="right">
+	<div class="info"><span>red<--booked</span>&nbsp;&nbsp;&nbsp;&nbsp;
+	<span>white<--avalible</span> 
+    </div>
+	
+
+	<table style="width:100%" id="main">
+  <tr>
+    <th>Room no</th>
+    <th>Price</th> 
+    <th>status</th>
+  </tr>
+  
+</table>
+<div id="content"></div>
+
+<div>
+<script src="index.js"></script>
+</html>

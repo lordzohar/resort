@@ -50,5 +50,12 @@
       <status>Avalible</status>
 
   </schedule>
+  <schedule>
+      <roomno>8</roomno>
+      <price>$230</price>
+      <status>Avalible</status>
+
+  </schedule>
+  
 </Resort>
 </rss>

@@ -14,7 +14,7 @@
 
 <h1>Edege water Motel and Cottages</h1>
 
-<form action="submit.html" method="get">
+<form action="submit.php" method="get" id='form'>
 <label name="people">Enter number of people</label>
 
 
@@ -24,16 +24,16 @@
 <label name="number">Time to checkout</label>
 <br>
 
-<input type="number" name="count" class="block">
-<input type="date" name="checkin" class="block">
-<input type="date" name="checkout" class="block">
+<input type="number" name="count" class="block" required min=0>
+<input type="date" name="checkin" class="block" required>
+<input type="date" name="checkout" class="block" required>
 
 
 
 
-<div class="map">
+<div class="map" >
 
-	<span class="one">
+	<span class="one" >
 	   <img                       src="num/1.png"    />
 	   <img style="display:none;" src="num/1red.png"  />
 	</span>
@@ -74,27 +74,41 @@
 
 
 </div>
-<input type="submit" value="Book">
+
+
+<input type="submit" value="Book" id="submit">
 
 </form>
 
 
-<div class="right">
-	<div class="info"><span>red<--booked</span>&nbsp;&nbsp;&nbsp;&nbsp;
-	<span>white<--avalible</span> 
-    </div>
-	
+	<div class="right">
+		<div class="info"><span>red<--booked</span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>white<--avalible</span> 
+	    </div>
+		
 
-	<table style="width:100%" id="main">
-  <tr>
-    <th>Room no</th>
-    <th>Price</th> 
-    <th>status</th>
-  </tr>
-  
-</table>
-<div id="content"></div>
+		<table style="width:100%" id="main">
+		  <tr>
+		    <th>Room no</th>
+		    <th>Price</th> 
+		    <th>status</th>
+		  </tr>
+		  
+		</table>
+			<div id="content">
+			<img  class="one hideimg" src="img/hotel1.jpg"  />
+			<img class="two hideimg"  src="img/hotel2.jpg"  />
+			<img class="three hideimg""  src="img/hotel3.jpg"  />
+			<img class="five hideimg"  src="img/hotel5.jpg"  />
+			<img class="six hideimg"  src="img/hotel6.jpg"  />
+			<img class="seven hideimg"  src="img/hotel7.jpg"  />
+			<img class="eight hideimg"  src="img/hotel8.jpg"  />
 
-<div>
+
+		</div>
+		
+
+		<div>
+	</div>
 <script src="index.js"></script>
 </html>
